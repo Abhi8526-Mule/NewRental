@@ -1,0 +1,652 @@
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RentACar - Premium Car Rental Service</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+    <style>, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/ ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com /,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.right-2{right:0.5rem}.top-2{top:0.5rem}.z-50{z-index:50}.mx-4{margin-left:1rem;margin-right:1rem}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-10{margin-left:2.5rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mr-3{margin-right:0.75rem}.mt-4{margin-top:1rem}.mb-3{margin-bottom:0.75rem}.ml-3{margin-left:0.75rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-48{height:12rem}.max-h-\[90vh\]{max-height:90vh}.w-16{width:4rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-y-auto{overflow-y:auto}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-t-lg{border-top-left-radius:0.5rem;border-top-right-radius:0.5rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-900{--tw-bg-opacity:1;background-color:rgb(30 58 138 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-blue-600{--tw-gradient-from:#2563eb var(--tw-gradient-from-position);--tw-gradient-to:rgb(37 99 235 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-800{--tw-gradient-to:#1e40af var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.p-4{padding:1rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.pt-3{padding-top:0.75rem}.text-center{text-align:center}.text-right{text-align:right}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-green-600{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:block{display:block}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-6xl{font-size:3.75rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (min-width: 1280px){.xl\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+    <body class="bg-gray-50">
+        <!-- Navigation -->
+        <nav class="bg-blue-900 text-white shadow-lg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center">
+                        <i class="fas fa-car text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">RentACar</span>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#home" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Home</a>
+                            <a href="#cars" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Cars</a>
+                            <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:bg-blue-700">About</a>
+                            <button onclick="showLogin()" class="px-3 py-2 rounded-md text-sm font-medium bg-blue-600 hover:bg-blue-500">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section with Booking Form -->
+        <section id="home" class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Find Your Perfect Rental Car</h1>
+                    <p class="text-xl md:text-2xl mb-8">Premium cars, affordable rates, and exceptional service</p>
+                </div>
+                
+                <!-- Booking Form -->
+                <div class="bg-white rounded-lg shadow-xl p-6 text-gray-900 max-w-4xl mx-auto">
+                    <h2 class="text-2xl font-bold mb-6 text-center">Book Your Car Now</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Pickup Location
+                            </label>
+                            <select id="pickupLocation" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select pickup location</option>
+                            <option value="Airport Terminal">Airport Terminal - 456 Airport Blvd</option><option value="Business Center">Business Center - 321 Fifth Avenue</option><option value="Downtown Center">Downtown Center - 123 Main Street</option><option value="Hotel District">Hotel District - 789 Broadway</option><option value="Shopping Mall">Shopping Mall - 654 Mall Drive</option></select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Drop-off Location
+                            </label>
+                            <select id="dropLocation" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="">Select drop-off location</option>
+                            <option value="Airport Terminal">Airport Terminal - 456 Airport Blvd</option><option value="Business Center">Business Center - 321 Fifth Avenue</option><option value="Downtown Center">Downtown Center - 123 Main Street</option><option value="Hotel District">Hotel District - 789 Broadway</option><option value="Shopping Mall">Shopping Mall - 654 Mall Drive</option></select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-calendar mr-1"></i>Pickup Date &amp; Time
+                            </label>
+                            <input type="datetime-local" id="pickupDateTime" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-calendar mr-1"></i>Return Date &amp; Time
+                            </label>
+                            <input type="datetime-local" id="returnDateTime" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-clock mr-1"></i>Rental Type
+                            </label>
+                            <select id="rentalType" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="daily">Daily Rental</option>
+                                <option value="hourly">Hourly Rental</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">
+                                <i class="fas fa-car mr-1"></i>Car Category
+                            </label>
+                            <select id="carCategory" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                                <option value="">All Categories</option>
+                                <option value="Economy">Economy</option>
+                                <option value="Compact">Compact</option>
+                                <option value="Mid-size">Mid-size</option>
+                                <option value="Full-size">Full-size</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Luxury">Luxury</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <button onclick="searchCars()" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium text-lg">
+                            <i class="fas fa-search mr-2"></i>Search Available Cars
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Available Cars Section -->
+        <section id="cars" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-900">Our Fleet</h2>
+                <div id="carsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="Honda Civic" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Compact
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Honda Civic</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$52</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$9.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(2)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=400" alt="Toyota Corolla" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Economy
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Toyota Corolla</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$45</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$8.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(1)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400" alt="Chevrolet Malibu" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Full-size
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Chevrolet Malibu</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$78</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$14.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(4)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400" alt="Audi A4" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Luxury
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Audi A4</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$169</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$30.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(10)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=400" alt="BMW 3 Series" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Luxury
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">BMW 3 Series</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$159</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$28.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(8)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400" alt="Mercedes-Benz C-Class" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Luxury
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Mercedes-Benz C-Class</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$179</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$32.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(9)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1536700503339-1e4b06520771?w=400" alt="Tesla Model 3" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Luxury
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Tesla Model 3</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Electric • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$139</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$25.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(11)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399?w=400" alt="Nissan Altima" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    Mid-size
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Nissan Altima</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$68</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$12.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(3)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="data:image/jpeg;base64,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" alt="Chevrolet Tahoe" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    SUV
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Chevrolet Tahoe</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>8 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$149</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$26.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(12)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="data:image/jpeg;base64,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" alt="Ford Escape" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    SUV
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Ford Escape</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$89</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$16.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(5)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=400" alt="Jeep Grand Cherokee" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    SUV
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Jeep Grand Cherokee</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Petrol • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$125</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$22.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(7)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div><div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow cursor-pointer">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400" alt="Toyota RAV4" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 text-sm font-semibold">
+                    SUV
+                </div>
+            </div>
+            
+            <div class="p-4">
+                <h3 class="text-xl font-bold text-gray-900 mb-2">Toyota RAV4</h3>
+                <p class="text-gray-600 text-sm mb-3">2023 • Hybrid • Automatic</p>
+                
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-users mr-1"></i>5 seats
+                        <i class="fas fa-car-side ml-3 mr-1"></i>4 doors
+                    </div>
+                </div>
+                
+                <div class="border-t pt-3">
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <p class="text-2xl font-bold text-blue-600">$95</p>
+                            <p class="text-xs text-gray-500">per day</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-lg font-semibold text-green-600">$18.99</p>
+                            <p class="text-xs text-gray-500">per hour</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="event.stopPropagation(); bookCar(6)" class="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors">
+                    Book Now
+                </button>
+            </div>
+        </div></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">About RentACar</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        We are a premium car rental service committed to providing you with the best vehicles, 
+                        competitive rates, and exceptional customer service. Whether you need a car for business, 
+                        vacation, or everyday use, we have the perfect vehicle for your needs.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-car text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Premium Fleet</h3>
+                        <p class="text-gray-600">Choose from our extensive collection of well-maintained, premium vehicles.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-clock text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">24/7 Service</h3>
+                        <p class="text-gray-600">Our customer support team is available around the clock to assist you.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-dollar-sign text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Best Prices</h3>
+                        <p class="text-gray-600">Competitive rates with no hidden fees. What you see is what you pay.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+            <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-2xl font-bold">Login</h3>
+                    <button onclick="hideLogin()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <form id="loginForm">
+                    <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="loginEmail" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                        <input type="password" id="loginPassword" required="" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium">
+                        Login
+                    </button>
+                </form>
+                
+                <p class="text-center mt-4 text-gray-600">
+                    Don't have an account? 
+                    <a href="#" onclick="showRegister()" class="text-blue-600 hover:underline">Register here</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Car Details Modal -->
+        <div id="carModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+            <div class="bg-white rounded-lg p-8 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 id="carModalTitle" class="text-2xl font-bold"></h3>
+                    <button onclick="hideCarModal()" class="text-gray-400 hover:text-gray-600">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div id="carModalContent">
+                    <!-- Car details will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-8">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p>© 2024 RentACar. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.6.0/dist/axios.min.js"></script>
+        <script src="/static/app.js"></script>
+    
+    
+  </body></html>
